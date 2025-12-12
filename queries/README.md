@@ -1,30 +1,3 @@
-
-Creates the `orders_clean` view by converting dates, standardizing fields, and preparing data for analysis.
-
-
-Computes all high-level business KPIs including total sales, total profit, and order count.
-
-
-Aggregates sales & profit by year to analyze year-over-year trends.
-
-
-Evaluates sales and profit by product category (Technology, Furniture, Office Supplies).
-
-Generates month-level metrics for time-series analysis.
-
-Identifies the top 10 most profitable customers.
-
-
-Lists all customers with negative total profit.
-
-
-
-
-
-
-
-
-
 # SQL Queries Documentation
 
 This folder contains all SQL scripts used in the **E-Commerce Sales & Profit Analysis** project.  
