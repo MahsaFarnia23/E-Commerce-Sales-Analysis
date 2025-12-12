@@ -54,127 +54,14 @@ They were transformed into ISO format so SQLite could process them correctly.
 
 ### Sample Cleaned Data (compact preview)
 ### Full Data Preview (All Columns)
-
-<h3>Sample cleaned data (3 rows)</h3>
-
-<div style="overflow-x:auto;">
-
-<table style="border-collapse:collapse; white-space:nowrap;">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>Order ID</th>
-      <th>Order Date</th>
-      <th>Ship Date</th>
-      <th>Ship Mode</th>
-      <th>Customer ID</th>
-      <th>Customer Name</th>
-      <th>Segment</th>
-      <th>Country</th>
-      <th>City</th>
-      <th>State</th>
-      <th>Postal Code</th>
-      <th>Region</th>
-      <th>Product ID</th>
-      <th>Category</th>
-      <th>Sub-Category</th>
-      <th>Product Name</th>
-      <th>Sales</th>
-      <th>Quantity</th>
-      <th>Discount</th>
-      <th>Profit</th>
-      <th>ISO Order Date</th>
-      <th>Year</th>
-      <th>Month</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>CA-2016-152156</td>
-      <td>11/8/2016</td>
-      <td>11/11/2016</td>
-      <td>Second Class</td>
-      <td>CG-12520</td>
-      <td>Claire Gute</td>
-      <td>Consumer</td>
-      <td>United States</td>
-      <td>Henderson</td>
-      <td>Kentucky</td>
-      <td>42420</td>
-      <td>South</td>
-      <td>FUR-BO-10001798</td>
-      <td>Furniture</td>
-      <td>Bookcases</td>
-      <td>Bush Somerset Collection Bookcase</td>
-      <td>261.96</td>
-      <td>2</td>
-      <td>0</td>
-      <td>41.9136</td>
-      <td>2016-11-08</td>
-      <td>2016</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>CA-2016-152156</td>
-      <td>11/8/2016</td>
-      <td>11/11/2016</td>
-      <td>Second Class</td>
-      <td>CG-12520</td>
-      <td>Claire Gute</td>
-      <td>Consumer</td>
-      <td>United States</td>
-      <td>Henderson</td>
-      <td>Kentucky</td>
-      <td>42420</td>
-      <td>South</td>
-      <td>FUR-CH-10000454</td>
-      <td>Furniture</td>
-      <td>Chairs</td>
-      <td>Hon Deluxe Fabric Upholstered Stacking Chairs, Rounded Back</td>
-      <td>731.94</td>
-      <td>3</td>
-      <td>0</td>
-      <td>219.582</td>
-      <td>2016-11-08</td>
-      <td>2016</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>CA-2016-138688</td>
-      <td>6/12/2016</td>
-      <td>6/16/2016</td>
-      <td>Second Class</td>
-      <td>DV-13045</td>
-      <td>Darrin Van Huff</td>
-      <td>Corporate</td>
-      <td>United States</td>
-      <td>Los Angeles</td>
-      <td>California</td>
-      <td>90036</td>
-      <td>West</td>
-      <td>OFF-LA-10000240</td>
-      <td>Office Supplies</td>
-      <td>Labels</td>
-      <td>Self-Adhesive Address Labels for Typewriters by Universal</td>
-      <td>14.62</td>
-      <td>2</td>
-      <td>0</td>
-      <td>6.8714</td>
-      <td>2016-06-12</td>
-      <td>2016</td>
-      <td>06</td>
-    </tr>
-  </tbody>
-</table>
-
-</div>
-
-
-
-
+```sql
+CREATE VIEW orders_clean AS
+SELECT
+    *,
+    printf('%04d-%02d-%02d', year, month, day) AS order_date,
+    strftime('%Y', order_date) AS order_year,
+    strftime('%m', order_date) AS order_month
+FROM "Sample - Superstore";
 
 
 ---
