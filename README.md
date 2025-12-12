@@ -60,6 +60,8 @@ They were transformed into ISO format so SQLite could process them correctly.
 | 4   | US-2015-108966   | 10/11/2015 | 10/18/2015 | Standard Class  | SO-20335    | Sean O'Donnell     | Consumer   | United States | Fort Lauderdale| Florida    | 33311       | South  | FUR-TA-10000577    | Furniture        | Tables       | Bretford CR4500 Series Slim Rectangular Table                            | 957.5775| 5   | 0.45     | -383.031  | 2015-10-11     | 2015 | 10    |
 | 5   | US-2015-108966   | 10/11/2015 | 10/18/2015 | Standard Class  | SO-20335    | Sean O'Donnell     | Consumer   | United States | Fort Lauderdale| Florida    | 33311       | South  | OFF-ST-10000760    | Office Supplies  | Storage      | Eldon Fold 'N Roll Cart System                                           | 22.368  | 2   | 0.2      | 2.5164    | 2015-10-11     | 2015 | 10    |
 
+
+
 ---
 
 # 📊 Overall KPIs
