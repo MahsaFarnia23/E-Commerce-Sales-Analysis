@@ -44,26 +44,6 @@ The project highlights real-world Data Analyst capabilities including:
 - Compare **regional performance**  
 
 ---
-### 1. [cleaning.sql](./queries/cleaning.sqbpro)
-Creates the `orders_clean` view by converting dates, standardizing fields, and preparing data for analysis.
-
-### 2. [kpis.sql](./queries/overall_KPIs.sqbpro) 
-Computes all high-level business KPIs including total sales, total profit, and order count.
-
-### 3. [yearly_performance.sql](./queries/Sale_yearly.sqbpro)  
-Aggregates sales & profit by year to analyze year-over-year trends.
-
-### 4. [category_performance.sql](./queries/sale_category.sqbpro)
-Evaluates sales and profit by product category (Technology, Furniture, Office Supplies).
-
-### 5. [monthly_trend.sql](./queries/monthly_trend.sqbpro)
-Generates month-level metrics for time-series analysis.
-
-### 6. [top_customers.sql](./queries/top_customers.sqbpro)
-Identifies the top 10 most profitable customers.
-
-### 7. [unprofitable_customers.sql](./queries/unprofitable_customers.sqbpro)
-Lists all customers with negative total profit.
 
 
 
