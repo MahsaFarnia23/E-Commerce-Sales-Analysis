@@ -44,21 +44,29 @@ The project highlights real-world Data Analyst capabilities including:
 - Compare **regional performance**  
 
 ---
+### 1. cleaning.sql  
+Creates the `orders_clean` view by converting dates, standardizing fields, and preparing data for analysis.
 
-# 🛠 Data Preparation
+### 2. kpis.sql  
+Computes all high-level business KPIs including total sales, total profit, and order count.
 
-### **1. Convert date columns into ISO format (`YYYY-MM-DD`)**
+### 3. yearly_performance.sql  
+Aggregates sales & profit by year to analyze year-over-year trends.
 
-The dataset originally contained dates in inconsistent formats (e.g., `11/8/2016`).  
-They were transformed into standard ISO format using string functions so SQLite could process them correctly.
+### 4. category_performance.sql  
+Evaluates sales and profit by product category (Technology, Furniture, Office Supplies).
 
-### **2. Create a clean view for analysis**
+### 5. monthly_trend.sql  
+Generates month-level metrics for time-series analysis.
 
-```sql
-CREATE VIEW orders_clean AS
-SELECT
-    *,
-    printf('%04d-%02d-%02d', year, month, day) AS order_date,
-    strftime('%Y', order_date) AS order_year,
-    strftime('%m', order_date) AS order_month
-FROM "Sample - Superstore";
+### 6. top_customers.sql  
+Identifies the top 10 most profitable customers.
+
+### 7. unprofitable_customers.sql  
+Lists all customers with negative total profit.
+
+
+
+
+
+
