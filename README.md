@@ -52,15 +52,18 @@ They were transformed into ISO format so SQLite could process them correctly.
 
 ### **2. Create a clean view for analysis**
 
-<div style="overflow-x:auto;">
+### Sample Cleaned Data (compact preview)
+### Full Data Preview (All Columns)
 
-| # | Order ID        | Order Date | Ship Date  | Ship Mode      | Customer ID | Customer Name     | Segment    | Country       | City          | State      | Postal Code | Region | Product ID        | Category        | Sub-Category | Product Name                                                             | Sales   | Qty | Discount | Profit   | ISO Date   | Year | Month |
-|---|-----------------|------------|------------|----------------|-------------|--------------------|------------|---------------|---------------|------------|-------------|--------|--------------------|------------------|--------------|--------------------------------------------------------------------------|---------:|-----:|----------:|----------:|------------|------|-------|
-| 1 | CA-2016-152156  | 11/8/2016  | 11/11/2016 | Second Class   | CG-12520    | Claire Gute        | Consumer   | United States | Henderson     | Kentucky   | 42420       | South  | FUR-BO-10001798    | Furniture        | Bookcases    | Bush Somerset Collection Bookcase                                       | 261.96  | 2   | 0        | 41.91    | 2016-11-08 | 2016 | 11    |
-| 2 | CA-2016-152156  | 11/8/2016  | 11/11/2016 | Second Class   | CG-12520    | Claire Gute        | Consumer   | United States | Henderson     | Kentucky   | 42420       | South  | FUR-CH-10000454    | Furniture        | Chairs       | Hon Deluxe Fabric Upholstered Stacking Chairs, Rounded Back              | 731.94  | 3   | 0        | 219.58   | 2016-11-08 | 2016 | 11    |
-| 3 | CA-2016-138688  | 6/12/2016  | 6/16/2016  | Second Class   | DV-13045    | Darrin Van Huff    | Corporate  | United States | Los Angeles   | California | 90036       | West   | OFF-LA-10000240    | Office Supplies  | Labels       | Self-Adhesive Address Labels for Typewriters by Universal               | 14.62   | 2   | 0        | 6.87     | 2016-06-12 | 2016 | 06    |
+> Scroll horizontally to view all columns →
 
-</div>
+| # | Order ID | Order Date | Ship Date | Ship Mode | Customer ID | Customer Name | Segment | Country | City | State | Postal Code | Region | Product ID | Category | Sub-Category | Product Name | Sales | Quantity | Discount | Profit | ISO Order Date | Year | Month |
+|---|----------|------------|-----------|-----------|-------------|----------------|---------|---------|------|--------|-------------|--------|------------|-----------|---------------|--------------|--------|----------|-----------|---------|----------------|------|-------|
+| 1 | CA-2016-152156 | 11/8/2016 | 11/11/2016 | Second Class | CG-12520 | Claire Gute | Consumer | United States | Henderson | Kentucky | 42420 | South | FUR-BO-10001798 | Furniture | Bookcases | Bush Somerset Collection Bookcase | 261.96 | 2 | 0 | 41.9136 | 2016-11-08 | 2016 | 11 |
+| 2 | CA-2016-152156 | 11/8/2016 | 11/11/2016 | Second Class | CG-12520 | Claire Gute | Consumer | United States | Henderson | Kentucky | 42420 | South | FUR-CH-10000454 | Furniture | Chairs | Hon Deluxe Fabric Upholstered Stacking Chairs, Rounded Back | 731.94 | 3 | 0 | 219.582 | 2016-11-08 | 2016 | 11 |
+| 3 | CA-2016-138688 | 6/12/2016 | 6/16/2016 | Second Class | DV-13045 | Darrin Van Huff | Corporate | United States | Los Angeles | California | 90036 | West | OFF-LA-10000240 | Office Supplies | Labels | Self-Adhesive Address Labels for Typewriters by Universal | 14.62 | 2 | 0 | 6.8714 | 2016-06-12 | 2016 | 06 |
+
+
 
 
 
