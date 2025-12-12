@@ -50,7 +50,7 @@ Creates the `orders_clean` view by converting dates, standardizing fields, and p
 ### 2. [kpis.sql](./queries/overall_KPIs.sqbpro) 
 Computes all high-level business KPIs including total sales, total profit, and order count.
 
-### 3. yearly_performance.sql  
+### 3. [yearly_performance.sql](./queries/yearly_performance.sqbpro)  
 Aggregates sales & profit by year to analyze year-over-year trends.
 
 ### 4. category_performance.sql  
