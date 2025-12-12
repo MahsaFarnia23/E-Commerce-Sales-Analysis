@@ -1,6 +1,6 @@
 # E-Commerce-Sales-Analysis
 
-# Superstore Sales & Customer Profitability Analysis (SQLite + SQL Project)
+# Superstore Sales & Customer Profitability Analysis (SQLite)
 
 A complete end-to-end SQL analytics project using the Superstore dataset.  
 This project demonstrates practical skills in data cleaning, KPI analysis, customer segmentation, discount impact evaluation, and profitability insights.
