@@ -54,10 +54,10 @@ Generates month-level sales and profit metrics to identify seasonal patterns and
 ### 6. [regional_analysis.sql](./queries/regional_analysis.sql)
 Compares regions by total orders, sales, profit, discount levels, and margin percentage.
 
-### 6. [top_customers.sql](./queries/top_customers.sqbpro)
+### 7. [top_customers.sql](./queries/top_customers.sqbpro)
 Identifies the top 10 most profitable customers using aggregated sales and profit metrics.
 
-### 7. [unprofitable_customers.sql](./queries/unprofitable_customers.sqbpro)
+### 8. [unprofitable_customers.sql](./queries/unprofitable_customers.sqbpro)
 Finds all customers with negative total profit and highlights margin erosion patterns.
 
 ---
