@@ -47,7 +47,7 @@ The project highlights real-world Data Analyst capabilities including:
 ### 1. [cleaning.sql](./queries/cleaning.sqbpro)
 Creates the `orders_clean` view by converting dates, standardizing fields, and preparing data for analysis.
 
-### 2. kpis.sql  
+### 2. [kpis.sql](./queries/overall_KPIs.sqbpro) 
 Computes all high-level business KPIs including total sales, total profit, and order count.
 
 ### 3. yearly_performance.sql  
