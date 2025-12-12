@@ -53,15 +53,8 @@ They were transformed into ISO format so SQLite could process them correctly.
 ### **2. Create a clean view for analysis**
 
 ### Sample Cleaned Data (compact preview)
-### Full Data Preview (All Columns)
-```sql
-CREATE VIEW orders_clean AS
-SELECT
-    *,
-    printf('%04d-%02d-%02d', year, month, day) AS order_date,
-    strftime('%Y', order_date) AS order_year,
-    strftime('%m', order_date) AS order_month
-FROM "Sample - Superstore";
+
+
 
 
 ---
