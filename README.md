@@ -102,17 +102,14 @@ They were transformed into ISO format so SQLite could process them correctly.
 
 # 📅 Monthly Sales & Profit Trend
 
-```sql
-SELECT
-    order_year,
-    order_month,
-    order_year || '-' || order_month AS year_month,
-    ROUND(SUM(sales), 2)  AS monthly_sales,
-    ROUND(SUM(profit), 2) AS monthly_profit
-FROM orders_clean
-GROUP BY order_year, order_month
-ORDER BY order_year, order_month;
-```
+| Year | Month | Year-Month | Sales (USD) | Profit (USD) |
+|------|--------|------------|-------------|--------------|
+| 2014 | 01     | 2014-01    | 14236.90    | 2450.19      |
+| 2014 | 02     | 2014-02    | 4519.89     | 862.31       |
+| 2014 | 03     | 2014-03    | 55691.01    | 498.73       |
+| 2014 | 04     | 2014-04    | 28295.35    | 3488.84      |
+| 2014 | 05     | 2014-05    | 23648.29    | 2738.71      |
+
 
 ### **Insights**
 
