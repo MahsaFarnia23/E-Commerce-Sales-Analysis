@@ -42,9 +42,171 @@ The project highlights real-world Data Analyst capabilities including:
 - Segment customers based on **profitability**  
 - Measure the **impact of discounts**  
 - Compare **regional performance**  
+---
+# 🛠 Data Preparation
+
+### **1. Convert date columns into ISO format (`YYYY-MM-DD`)**
+
+The dataset originally contained dates in inconsistent formats (e.g., `11/8/2016`).  
+They were transformed into ISO format so SQLite could process them correctly.
+
+### **2. Create a clean view for analysis**
+
+```sql
+CREATE VIEW orders_clean AS
+SELECT
+    *,
+    printf('%04d-%02d-%02d', year, month, day) AS order_date,
+    strftime('%Y', order_date) AS order_year,
+    strftime('%m', order_date) AS order_month
+FROM "Sample - Superstore";
+````
 
 ---
 
+# 📊 Overall KPIs
+
+* **5,009 unique orders**
+* **Total sales:** $2.30M
+* **Total profit:** $286K
+* **Overall profit margin:** ~12–13%
+
+---
+
+# 📈 Yearly Performance
+
+| Year | Sales (USD) | Profit (USD) |
+| ---- | ----------- | ------------ |
+| 2014 | 484,247.50  | 49,543.97    |
+| 2015 | 470,532.51  | 61,618.60    |
+| 2016 | 609,205.60  | 81,795.17    |
+| 2017 | 733,215.26  | 93,439.27    |
+
+### **Insights**
+
+* Revenue dipped slightly in 2015 vs. 2014, but profit rose.
+* Sales and profit grew sharply in 2016 and 2017, showing positive momentum.
+
+---
+
+# 🛒 Category Performance
+
+| Category        | Sales (USD) | Profit (USD) |
+| --------------- | ----------: | -----------: |
+| Technology      |  836,154.03 |   145,454.95 |
+| Furniture       |  741,999.80 |    18,451.27 |
+| Office Supplies |  719,047.03 |   122,490.80 |
+
+### **Insights**
+
+* Technology is the strongest category by a wide margin.
+* Office Supplies also shows high profitability.
+* Furniture generates high sales but minimal profit due to low margins.
+
+---
+
+# 📅 Monthly Sales & Profit Trend
+
+```sql
+SELECT
+    order_year,
+    order_month,
+    order_year || '-' || order_month AS year_month,
+    ROUND(SUM(sales), 2)  AS monthly_sales,
+    ROUND(SUM(profit), 2) AS monthly_profit
+FROM orders_clean
+GROUP BY order_year, order_month
+ORDER BY order_year, order_month;
+```
+
+### **Insights**
+
+* **Q4 consistently delivers the highest revenue**, especially November and December.
+* Profit does not always rise with sales due to discounting (especially in Q4).
+* **Q1 is the weakest period**, reflecting post-holiday slowdown.
+* Some months (e.g., **March, October**) show unusually high margins.
+* Negative-profit months (e.g., **July 2014**, **Jan 2015**) highlight unprofitable discounting.
+* **2017** is the strongest year overall.
+
+---
+
+# 🌎 Regional Sales & Profit Analysis
+
+```sql
+SELECT
+    region,
+    COUNT(DISTINCT order_id) AS total_orders,
+    ROUND(SUM(sales), 2)     AS total_sales,
+    ROUND(SUM(profit), 2)    AS total_profit,
+    ROUND(AVG(discount), 4)  AS avg_discount,
+    ROUND((SUM(profit) * 100.0 / SUM(sales)), 2) AS profit_margin_pct
+FROM orders_clean
+GROUP BY region
+ORDER BY total_sales DESC;
+```
+
+### **Insights**
+
+* **West** leads all regions in revenue ($725K) and profit ($108K) with the highest margin (14.9%).
+* **East** performs strongly but with slightly lower margins.
+* **Central** suffers from high discounting (avg 24%) and the lowest margin (7.9%).
+* **South** has the lowest revenue but healthier margins than Central.
+* Strong negative correlation: **higher discount = lower margin**.
+* **West + East = 60% of total revenue**.
+
+---
+
+# 🏆 Top 10 Most Profitable Customers
+
+```sql
+SELECT
+    customer_id,
+    customer_name,
+    ROUND(SUM(sales), 2)  AS total_sales,
+    ROUND(SUM(profit), 2) AS total_profit,
+    COUNT(DISTINCT order_id) AS order_count
+FROM orders_clean
+GROUP BY customer_id, customer_name
+ORDER BY total_profit DESC
+LIMIT 10;
+```
+
+### **Insights**
+
+* **Tamara Chand** is the most profitable customer ($8,981 profit from 5 orders).
+* Raymond Buch and Sanjit Chand also contribute strongly.
+* Some frequent buyers (e.g., **Keith Dawkins**) generate low profit due to product mix or discounts.
+* Profitability is not equal to revenue — discounts and category margins matter.
+* Top 10 customers contribute **~17% of total company profit**.
+* Valuable for CRM, loyalty programs, and pricing optimization.
+
+---
+
+# 🚨 Unprofitable Customers Analysis
+
+```sql
+SELECT
+    customer_id,
+    customer_name,
+    ROUND(SUM(sales), 2)  AS total_sales,
+    ROUND(SUM(profit), 2) AS total_profit,
+    COUNT(DISTINCT order_id) AS order_count
+FROM orders_clean
+GROUP BY customer_id, customer_name
+HAVING SUM(profit) < 0
+ORDER BY total_profit ASC;
+```
+
+### **Insights**
+
+* **Cindy Stewart** is the most unprofitable customer (–$6,626 loss).
+* Several others (e.g., **Grant Thornton**, **Luke Foster**) produce significant losses.
+* High-frequency customers with negative profit (e.g., **Henry Goldwyn**, **Zuschuss Carroll**) are structurally unprofitable.
+* Some customers generate high sales but negative profit → discount-heavy transactions.
+* Negative-profit customers collectively account for **over –$70K in loss**.
+* Indicates need for improved discount strategy and targeted segmentation.
+
+```
 
 
 
