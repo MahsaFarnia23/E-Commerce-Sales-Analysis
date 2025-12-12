@@ -124,18 +124,13 @@ They were transformed into ISO format so SQLite could process them correctly.
 
 # 🌎 Regional Sales & Profit Analysis
 
-```sql
-SELECT
-    region,
-    COUNT(DISTINCT order_id) AS total_orders,
-    ROUND(SUM(sales), 2)     AS total_sales,
-    ROUND(SUM(profit), 2)    AS total_profit,
-    ROUND(AVG(discount), 4)  AS avg_discount,
-    ROUND((SUM(profit) * 100.0 / SUM(sales)), 2) AS profit_margin_pct
-FROM orders_clean
-GROUP BY region
-ORDER BY total_sales DESC;
-```
+| Region  | Total Orders | Total Sales (USD) | Total Profit (USD) | Avg Discount | Profit Margin (%) |
+|---------|--------------|-------------------|---------------------|--------------|--------------------|
+| West    | 1611         | 725,457.82        | 108,418.45          | 0.1093       | 14.94              |
+| East    | 1401         | 678,781.24        | 91,522.78           | 0.1454       | 13.48              |
+| Central | 1175         | 501,239.89        | 39,706.36           | 0.2404       | 7.92               |
+| South   | 822          | 391,721.91        | 46,749.43           | 0.1473       | 11.93              |
+
 
 ### **Insights**
 
