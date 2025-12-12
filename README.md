@@ -44,7 +44,7 @@ The project highlights real-world Data Analyst capabilities including:
 - Compare **regional performance**  
 
 ---
-### 1. cleaning.sql  
+### 1. [cleaning.sql]( cleaning.sqbpro)   
 Creates the `orders_clean` view by converting dates, standardizing fields, and preparing data for analysis.
 
 ### 2. kpis.sql  
