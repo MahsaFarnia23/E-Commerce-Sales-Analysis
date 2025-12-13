@@ -16,7 +16,7 @@ All charts are generated using **Pandas**, **Matplotlib**, and **Seaborn**, and 
 | `03_regional_sales.py` | Total sales by region |
 | `04_regional_margin.py` | Profit margin (%) by region |
 | `05_category_performance.py` | Sales vs profit by product category |
-| `06_pareto_customers.py` | Pareto (80/20) analysis of customer profitability |
+| `06_pareto_customers.py` | Top profitable customers with highest total profit |
 | `07_unprofitable_customers.py` | Top unprofitable customers by total loss |
 
 ---
