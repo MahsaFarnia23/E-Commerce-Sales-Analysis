@@ -10,11 +10,11 @@
 ![Regional Margin](images/regional_margin.png)
 
 ### Category Performance
-![Category Performance](images/category_performance.png)
+![Category Performance](images/category_sales_profit.png)
 
 ### Top Customers – Pareto Analysis
-![Pareto](images/pareto_customers.png)
+![Pareto](images/profitable_customers_profit.png)
 
 ### Unprofitable Customers
-![Unprofitable Customers](images/unprofitable_customers.png)
+![Unprofitable Customers](images/top_unprofitable_customers.png)
 
