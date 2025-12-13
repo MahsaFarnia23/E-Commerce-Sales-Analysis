@@ -216,3 +216,10 @@ They were transformed into ISO format so SQLite could process them correctly.
 * Indicates need for improved discount strategy and targeted segmentation.
 
 
+---
+
+## ✅ Final Note
+
+**This analysis identifies cases where high sales do not translate into profit and provides actionable insights to improve pricing, discount, and customer strategies.**
+
+
