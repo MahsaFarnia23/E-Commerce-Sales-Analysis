@@ -34,6 +34,12 @@ The project highlights real-world Data Analyst capabilities including:
 - Insight generation for business decisions  
 
 ---
+# E-Commerce Sales Analysis
+
+This project addresses the common business challenge of high sales volume with inconsistent profitability by identifying key drivers of profit and loss across customers, product categories, regions, and discount strategies.
+
+---
+
 
 # 🎯 Objectives
 
