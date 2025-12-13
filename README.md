@@ -195,7 +195,7 @@ They were transformed into ISO format so SQLite could process them correctly.
 * Negative-profit customers collectively account for **over –$70K in loss**.
 * Indicates need for improved discount strategy and targeted segmentation.
 
-```
+
 
 
 
