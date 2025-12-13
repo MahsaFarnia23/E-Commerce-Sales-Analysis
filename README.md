@@ -172,18 +172,19 @@ They were transformed into ISO format so SQLite could process them correctly.
 
 # 🚨 Unprofitable Customers Analysis
 
-```sql
-SELECT
-    customer_id,
-    customer_name,
-    ROUND(SUM(sales), 2)  AS total_sales,
-    ROUND(SUM(profit), 2) AS total_profit,
-    COUNT(DISTINCT order_id) AS order_count
-FROM orders_clean
-GROUP BY customer_id, customer_name
-HAVING SUM(profit) < 0
-ORDER BY total_profit ASC;
-```
+| Customer ID | Customer Name     | Total Sales (USD) | Total Profit (USD) | Orders |
+|-------------|-------------------|-------------------|---------------------|--------|
+| CS-12505 | Cindy Stewart     | 5690.05 | -6626.39 | 6 |
+| GT-14635 | Grant Thornton    | 9351.21 | -4108.66 | 3 |
+| LF-17185 | Luke Foster       | 3930.51 | -3583.98 | 7 |
+| SR-20425 | Sharelle Roach    | 3233.48 | -3333.91 | 5 |
+| HG-14965 | Henry Goldwyn     | 3247.64 | -2797.96 | 12 |
+| NC-18415 | Nathan Cano       | 2218.99 | -2204.81 | 6 |
+| SB-20290 | Sean Braxton      | 8057.89 | -2082.75 | 7 |
+| SM-20320 | Sean Miller       | 25043.05 | -1980.74 | 5 |
+| CP-12340 | Christine Phan    | 5888.27 | -1850.30 | 8 |
+| NF-18385 | Natalie Fritzler  | 8322.83 | -1695.97 | 7 |
+
 
 ### **Insights**
 
