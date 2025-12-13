@@ -145,18 +145,19 @@ They were transformed into ISO format so SQLite could process them correctly.
 
 # 🏆 Top 10 Most Profitable Customers
 
-```sql
-SELECT
-    customer_id,
-    customer_name,
-    ROUND(SUM(sales), 2)  AS total_sales,
-    ROUND(SUM(profit), 2) AS total_profit,
-    COUNT(DISTINCT order_id) AS order_count
-FROM orders_clean
-GROUP BY customer_id, customer_name
-ORDER BY total_profit DESC
-LIMIT 10;
-```
+| Customer ID | Customer Name        | Total Sales (USD) | Total Profit (USD) | Order Count |
+|-------------|-----------------------|--------------------|---------------------|-------------|
+| TC-20980    | Tamara Chand          | 19,052.22          | 8,981.32            | 5           |
+| RB-19360    | Raymond Buch          | 15,117.34          | 6,976.10            | 6           |
+| SC-20095    | Sanjit Chand          | 14,142.33          | 5,757.41            | 9           |
+| HL-15040    | Hunter Lopez          | 12,873.30          | 5,622.43            | 6           |
+| AB-10105    | Adrian Barton         | 14,473.57          | 5,444.81            | 10          |
+| TA-21385    | Tom Ashbrook          | 14,595.62          | 4,703.79            | 4           |
+| CM-12385    | Christopher Martinez  | 8,954.02           | 3,899.89            | 4           |
+| KD-16495    | Keith Dawkins         | 8,181.26           | 3,038.63            | 12          |
+| AR-10540    | Andy Reiter           | 6,608.45           | 2,884.62            | 6           |
+| DR-12940    | Daniel Raglin         | 8,350.87           | 2,869.08            | 8           |
+
 
 ### **Insights**
 
