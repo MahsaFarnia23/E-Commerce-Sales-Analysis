@@ -7,17 +7,19 @@ This project demonstrates practical skills in data cleaning, KPI analysis, custo
 
 # 📑 Table of Contents
 
-1. [Project Overview](#project-overview)  
-2. [Objectives](#objectives)  
-3. [Data Preparation](#data-preparation)  
-4. [Overall KPIs](#overall-kpis)  
-5. [Yearly Performance](#yearly-performance)  
-6. [Category Performance](#category-performance)  
-7. [Monthly Sales & Profit Trend](#monthly-sales--profit-trend)  
-8. [Regional Sales & Profit Analysis](#regional-sales--profit-analysis)  
-9. [Top 10 Most Profitable Customers](#top-10-most-profitable-customers)  
-10. [Unprofitable Customers Analysis](#unprofitable-customers-analysis)  
-11. [Final Notes](#final-notes)
+1. [Project Overview](#project-overview)
+2. [E-Commerce Sales Analysis](#E-Commerce-Sales-Analysis)  
+3. [Objectives](#objectives)  
+4. [Data Preparation](#data-preparation)
+5. [How to Run ](#How-to-Run )
+6. [Overall KPIs](#overall-kpis)  
+7. [Yearly Performance](#yearly-performance)  
+8. [Category Performance](#category-performance)  
+9. [Monthly Sales & Profit Trend](#monthly-sales--profit-trend)  
+10. [Regional Sales & Profit Analysis](#regional-sales--profit-analysis)  
+11. [Top 10 Most Profitable Customers](#top-10-most-profitable-customers)  
+12. [Unprofitable Customers Analysis](#unprofitable-customers-analysis)  
+13. [Final Notes](#final-notes)
 
 ---
 
