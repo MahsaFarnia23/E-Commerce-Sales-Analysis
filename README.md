@@ -145,7 +145,7 @@ They were transformed into ISO format so SQLite could process them correctly.
 | South   | 822          | 391,721.91        | 46,749.43           | 0.1473       | 11.93              |
 
 
-<img src="images/03_regional_sales.png" width="800">
+<img src="images/03_regional_sales.png" width="600">
 ### **Insights**
 
 * **West** leads all regions in revenue ($725K) and profit ($108K) with the highest margin (14.9%).
