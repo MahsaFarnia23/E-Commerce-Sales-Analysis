@@ -11,19 +11,6 @@ All charts are generated using **Pandas**, **Matplotlib**, and **Seaborn**, and 
 
 | Script | Description |
 |------|------------|
-| [`01_monthly_trend.py`](.\01_monthly_trend.py) | Monthly sales and profit trend over time |
-| `02_yearly_trend.py` | Yearly comparison of total sales and profit |
-| `03_regional_sales.py` | Total sales by region |
-| `04_category_performance.py` | Sales vs profit by product category |
-| `05_top_customers_profit.py` | Top profitable customers by total profit |
-| `06_unprofitable_customers.py` | Top unprofitable customers by total loss |
-
-
-
-## 📁 Scripts Overview
-
-| Script | Description |
-|------|------------|
 | [`01_monthly_trend.py`](01_monthly_trend.py) | Monthly sales and profit trend over time |
 | [`02_yearly_trend.py`](02_yearly_trend.py) | Yearly comparison of total sales and profit |
 | [`03_regional_sales.py`](03_regional_sales.py) | Total sales by region |
