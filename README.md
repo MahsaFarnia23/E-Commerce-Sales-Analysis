@@ -52,7 +52,6 @@ They were transformed into ISO format so SQLite could process them correctly.
 
 ### **2. Create a clean view for analysis**
 
-### Sample Cleaned Data (compact preview)
 
 
 
