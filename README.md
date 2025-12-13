@@ -213,3 +213,125 @@ They were transformed into ISO format so SQLite could process them correctly.
 
 
 
+---
+
+## 📈 Yearly Performance
+
+| Year | Sales (USD) | Profit (USD) |
+| ---- | ----------- | ------------ |
+| 2014 | 484,247.50  | 49,543.97    |
+| 2015 | 470,532.51  | 61,618.60    |
+| 2016 | 609,205.60  | 81,795.17    |
+| 2017 | 733,215.26  | 93,439.27    |
+
+### 📊 Visualization — Yearly Sales vs Profit
+
+```markdown
+![Yearly Sales vs Profit](images/yearly_sales_profit.png)
+```
+
+### **Insights**
+
+* Revenue dipped slightly in 2015 vs. 2014, but profit rose.
+* Sales and profit grew sharply in 2016 and 2017, showing positive momentum.
+
+---
+
+## 📅 Monthly Sales & Profit Trend
+
+| Year | Month | Year-Month | Sales (USD) | Profit (USD) |
+| ---- | ----- | ---------- | ----------- | ------------ |
+| 2014 | 01    | 2014-01    | 14236.90    | 2450.19      |
+| 2014 | 02    | 2014-02    | 4519.89     | 862.31       |
+| 2014 | 03    | 2014-03    | 55691.01    | 498.73       |
+| 2014 | 04    | 2014-04    | 28295.35    | 3488.84      |
+| 2014 | 05    | 2014-05    | 23648.29    | 2738.71      |
+
+### 📊 Visualization — Monthly Trend
+
+```markdown
+![Monthly Sales and Profit Trend](images/monthly_sales_profit_trend.png)
+```
+
+### **Insights**
+
+* Q4 consistently delivers the highest revenue.
+* Profit does not always scale with sales due to discounting.
+* 2017 is the strongest year overall.
+
+---
+
+## 🌎 Regional Sales & Profit Analysis
+
+| Region  | Total Orders | Total Sales (USD) | Total Profit (USD) | Avg Discount | Profit Margin (%) |
+| ------- | ------------ | ----------------- | ------------------ | ------------ | ----------------- |
+| West    | 1611         | 725,457.82        | 108,418.45         | 0.1093       | 14.94             |
+| East    | 1401         | 678,781.24        | 91,522.78          | 0.1454       | 13.48             |
+| Central | 1175         | 501,239.89        | 39,706.36          | 0.2404       | 7.92              |
+| South   | 822          | 391,721.91        | 46,749.43          | 0.1473       | 11.93             |
+
+### 📊 Visualization — Sales by Region
+
+```markdown
+![Total Sales by Region](images/regional_sales.png)
+```
+
+### **Insights**
+
+* West is the strongest region in both revenue and margin.
+* Central suffers from excessive discounting.
+* West + East account for ~60% of total revenue.
+
+---
+
+## 🏆 Top 10 Most Profitable Customers
+
+| Customer ID | Customer Name | Total Sales | Total Profit | Orders |
+| ----------- | ------------- | ----------- | ------------ | ------ |
+| TC-20980    | Tamara Chand  | 19,052.22   | 8,981.32     | 5      |
+| RB-19360    | Raymond Buch  | 15,117.34   | 6,976.10     | 6      |
+| SC-20095    | Sanjit Chand  | 14,142.33   | 5,757.41     | 9      |
+| HL-15040    | Hunter Lopez  | 12,873.30   | 5,622.43     | 6      |
+| AB-10105    | Adrian Barton | 14,473.57   | 5,444.81     | 10     |
+
+### 📊 Visualization — Top Customers by Profit
+
+```markdown
+![Top Profitable Customers](images/top_customers_profit.png)
+```
+
+### **Insights**
+
+* A small group of customers contributes disproportionately to total profit.
+* Profitability is not driven by order count alone.
+
+---
+
+## 🚨 Unprofitable Customers Analysis
+
+| Customer ID | Customer Name  | Total Sales | Total Profit | Orders |
+| ----------- | -------------- | ----------- | ------------ | ------ |
+| CS-12505    | Cindy Stewart  | 5,690.05    | -6,626.39    | 6      |
+| GT-14635    | Grant Thornton | 9,351.21    | -4,108.66    | 3      |
+| LF-17185    | Luke Foster    | 3,930.51    | -3,583.98    | 7      |
+
+### 📊 Visualization — Loss-Making Customers
+
+```markdown
+![Unprofitable Customers](images/unprofitable_customers.png)
+```
+
+### **Insights**
+
+* A subset of customers consistently generates losses.
+* High discounts and low-margin categories drive negative profitability.
+
+---
+
+
+
+
+
+
+
+
