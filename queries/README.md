@@ -12,25 +12,25 @@ Click on any script below to open the corresponding SQL file.
 ### 1. [cleaning.sql](./cleaning.sqbpro)
 Prepares the dataset for analysis by converting date formats, standardizing fields, and creating the `orders_clean` view used in all downstream queries.
 
-### 2. [kpis.sql](./queries/overall_KPIs.sqbpro) 
+### 2. [kpis.sql](./overall_KPIs.sqbpro) 
 Computes the main business KPIs including total sales, total profit, order count, and profit margins.
 
-### 3. [yearly_performance.sql](./queries/Sale_yearly.sqbpro)  
+### 3. [yearly_performance.sql](./Sale_yearly.sqbpro)  
 Aggregates sales and profit by year to evaluate overall business performance over time.
 
-### 4. [category_performance.sql](./queries/sale_category.sqbpro)
+### 4. [category_performance.sql](./sale_category.sqbpro)
 Analyzes revenue and profitability across major product categories such as Technology, Furniture, and Office Supplies.
 
-### 5. [monthly_trend.sql](./queries/monthly_trend.sqbpro)
+### 5. [monthly_trend.sql](./monthly_trend.sqbpro)
 Generates month-level sales and profit metrics to identify seasonal patterns and monthly trends.
 
-### 6. [regional_analysis.sql](./queries/regional_analysis.sql)
+### 6. [regional_analysis.sql](./regional_analysis.sql)
 Compares regions by total orders, sales, profit, discount levels, and margin percentage.
 
-### 7. [top_customers.sql](./queries/top_customers.sqbpro)
+### 7. [top_customers.sql](./top_customers.sqbpro)
 Identifies the top 10 most profitable customers using aggregated sales and profit metrics.
 
-### 8. [unprofitable_customers.sql](./queries/unprofitable_customers.sqbpro)
+### 8. [unprofitable_customers.sql](./unprofitable_customers.sqbpro)
 Finds all customers with negative total profit and highlights margin erosion patterns.
 
 ---
