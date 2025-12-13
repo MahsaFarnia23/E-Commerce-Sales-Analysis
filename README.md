@@ -59,7 +59,12 @@ They were transformed into ISO format so SQLite could process them correctly.
 ### **2. Create a clean view for analysis**
 
 
+---
+## ▶️ How to Run
 
+1. Import the CSV file into SQLite.
+2. Run the cleaning SQL scripts.
+3. Run the analysis SQL scripts.
 
 
 ---
