@@ -122,7 +122,6 @@ They were transformed into ISO format so SQLite could process them correctly.
 | 2014 | 04     | 2014-04    | 28295.35    | 3488.84      |
 | 2014 | 05     | 2014-05    | 23648.29    | 2738.71      |
 
-![Monthly Sales and Profit Trend](images/01_monthly_trend.png)
 <img src="images/01_monthly_trend.png" width="800">
 
 ### **Insights**
@@ -146,7 +145,7 @@ They were transformed into ISO format so SQLite could process them correctly.
 | South   | 822          | 391,721.91        | 46,749.43           | 0.1473       | 11.93              |
 
 ![Total Sales by Region](images/03_regional_sales.png)
-
+<img src="images/03_regional_sales.png" width="800">
 ### **Insights**
 
 * **West** leads all regions in revenue ($725K) and profit ($108K) with the highest margin (14.9%).
@@ -175,6 +174,8 @@ They were transformed into ISO format so SQLite could process them correctly.
 
 
 ![Top Profitable Customers](images/05_top_customers_profit.png)
+<img src="images/05_top_customers_profit.png" width="800">
+
 ### **Insights**
 
 * **Tamara Chand** is the most profitable customer ($8,981 profit from 5 orders).
@@ -203,6 +204,7 @@ They were transformed into ISO format so SQLite could process them correctly.
 
 
 ![Unprofitable Customers](images/06_unprofitable_customers.png)
+<img src="images/06_unprofitable_customers.png" width="800">
 
 ### **Insights**
 
