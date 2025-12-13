@@ -122,7 +122,7 @@ They were transformed into ISO format so SQLite could process them correctly.
 | 2014 | 04     | 2014-04    | 28295.35    | 3488.84      |
 | 2014 | 05     | 2014-05    | 23648.29    | 2738.71      |
 
-![Monthly Sales and Profit Trend](images/02_monthly_trend.png)
+![Monthly Sales and Profit Trend](./images/02_monthly_trend.png)
 
 ### **Insights**
 
