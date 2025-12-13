@@ -144,7 +144,7 @@ They were transformed into ISO format so SQLite could process them correctly.
 | Central | 1175         | 501,239.89        | 39,706.36           | 0.2404       | 7.92               |
 | South   | 822          | 391,721.91        | 46,749.43           | 0.1473       | 11.93              |
 
-![Total Sales by Region](images/03_regional_sales.png)
+
 <img src="images/03_regional_sales.png" width="800">
 ### **Insights**
 
@@ -173,7 +173,7 @@ They were transformed into ISO format so SQLite could process them correctly.
 | DR-12940    | Daniel Raglin         | 8,350.87           | 2,869.08            | 8           |
 
 
-![Top Profitable Customers](images/05_top_customers_profit.png)
+
 <img src="images/05_top_customers_profit.png" width="800">
 
 ### **Insights**
@@ -203,7 +203,7 @@ They were transformed into ISO format so SQLite could process them correctly.
 | NF-18385 | Natalie Fritzler  | 8322.83 | -1695.97 | 7 |
 
 
-![Unprofitable Customers](images/06_unprofitable_customers.png)
+
 <img src="images/06_unprofitable_customers.png" width="800">
 
 ### **Insights**
