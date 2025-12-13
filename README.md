@@ -18,7 +18,8 @@ This project demonstrates practical skills in data cleaning, KPI analysis, custo
 9. [Monthly Sales & Profit Trend](#monthly-sales--profit-trend)  
 10. [Regional Sales & Profit Analysis](#regional-sales--profit-analysis)  
 11. [Top 10 Most Profitable Customers](#top-10-most-profitable-customers)  
-12. [Unprofitable Customers Analysis](#unprofitable-customers-analysis)  
+12. [Unprofitable Customers Analysis](#unprofitable-customers-analysis)
+13. [Final_Note](#final_note)
 
 
 ---
