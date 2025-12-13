@@ -123,6 +123,7 @@ They were transformed into ISO format so SQLite could process them correctly.
 | 2014 | 05     | 2014-05    | 23648.29    | 2738.71      |
 
 ![Monthly Sales and Profit Trend](images/01_monthly_trend.png)
+<img src="images/01_monthly_trend.png" width="600">
 
 ### **Insights**
 
