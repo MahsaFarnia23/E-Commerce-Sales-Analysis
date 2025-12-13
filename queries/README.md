@@ -9,7 +9,7 @@ Click on any script below to open the corresponding SQL file.
 
 ## 📌 Queries Overview
 
-### 1. [cleaning.sql](./queries/cleaning.sqbpro)
+### 1. [cleaning.sql](./E-Commerce-Sales-Analysis/queries/cleaning.sqbpro)
 Prepares the dataset for analysis by converting date formats, standardizing fields, and creating the `orders_clean` view used in all downstream queries.
 
 ### 2. [kpis.sql](./queries/overall_KPIs.sqbpro) 
