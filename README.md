@@ -147,6 +147,7 @@ The table shows a cleaned sample of the dataset, with standardized date formats 
 
 
 <img src="images/03_regional_sales.png" width="600">
+
 ### **Insights**
 
 * **West** leads all regions in revenue ($725K) and profit ($108K) with the highest margin (14.9%).
