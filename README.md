@@ -94,6 +94,8 @@ The table shows a cleaned sample of the dataset, with standardized date formats 
 | 2016 | 609,205.60  | 81,795.17    |
 | 2017 | 733,215.26  | 93,439.27    |
 
+[Sale yearly](queries/Sale_yearly.sqbpro)
+
 ### **Insights**
 
 * Revenue dipped slightly in 2015 vs. 2014, but profit rose.
@@ -108,6 +110,8 @@ The table shows a cleaned sample of the dataset, with standardized date formats 
 | Technology      |  836,154.03 |   145,454.95 |
 | Furniture       |  741,999.80 |    18,451.27 |
 | Office Supplies |  719,047.03 |   122,490.80 |
+
+[sale category](queries/sale_category.sqbpro)
 
 ### **Insights**
 
