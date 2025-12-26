@@ -131,6 +131,8 @@ The table shows a cleaned sample of the dataset, with standardized date formats 
 | 2014 | 04     | 2014-04    | 28295.35    | 3488.84      |
 | 2014 | 05     | 2014-05    | 23648.29    | 2738.71      |
 
+[monthly trend](queries/monthly_trend.sqbpro)
+
 <img src="images/01_monthly_trend.png" width="800">
 
 ### **Insights**
@@ -153,6 +155,7 @@ The table shows a cleaned sample of the dataset, with standardized date formats 
 | Central | 1175         | 501,239.89        | 39,706.36           | 0.2404       | 7.92               |
 | South   | 822          | 391,721.91        | 46,749.43           | 0.1473       | 11.93              |
 
+[region analysis](queries/region_analysis.sqbpro)
 
 <img src="images/03_regional_sales.png" width="600">
 
@@ -182,7 +185,7 @@ The table shows a cleaned sample of the dataset, with standardized date formats 
 | AR-10540    | Andy Reiter           | 6,608.45           | 2,884.62            | 6           |
 | DR-12940    | Daniel Raglin         | 8,350.87           | 2,869.08            | 8           |
 
-
+[top customers](queries/top_customers.sqbpro)
 
 <img src="images/05_top_customers_profit.png" width="800">
 
@@ -212,7 +215,7 @@ The table shows a cleaned sample of the dataset, with standardized date formats 
 | CP-12340 | Christine Phan    | 5888.27 | -1850.30 | 8 |
 | NF-18385 | Natalie Fritzler  | 8322.83 | -1695.97 | 7 |
 
-
+[unprofitable customers](queries/unprofitable_customers.sqbpro)
 
 <img src="images/06_unprofitable_customers.png" width="800">
 
