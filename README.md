@@ -61,6 +61,7 @@ They were transformed into ISO format so SQLite could process them correctly.
 
 ### **2. Create a clean view for analysis**
 The table shows a cleaned sample of the dataset, with standardized date formats and additional derived columns for order year and order month.
+
 [cleaning](queries/cleaning.sqbpro)
 
 ---
