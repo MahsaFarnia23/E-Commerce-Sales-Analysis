@@ -81,6 +81,8 @@ The table shows a cleaned sample of the dataset, with standardized date formats 
 * **Total profit:** $286K
 * **Overall profit margin:** ~12–13%
 
+[overall KPIs](queries/overall_KPIs.sqbpro)
+
 ---
 
 # 📈 Yearly Performance
