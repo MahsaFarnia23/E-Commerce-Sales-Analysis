@@ -135,6 +135,8 @@ The table shows a cleaned sample of the dataset, with standardized date formats 
 
 <img src="images/01_monthly_trend.png" width="800">
 
+[visualisation monthly trend](visualisation/01_monthly_trend.py)
+
 ### **Insights**
 
 * **Q4 consistently delivers the highest revenue**, especially November and December.
