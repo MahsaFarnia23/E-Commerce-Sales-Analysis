@@ -1,4 +1,4 @@
---top 10 customers with negative profit
+--top 10 customers
 SELECT
     customer_id,
     customer_name,
@@ -7,5 +7,5 @@ SELECT
     COUNT(DISTINCT order_id) AS order_count
 FROM orders_clean
 GROUP BY customer_id, customer_name
-HAVING SUM(profit) &lt; 0
-ORDER BY total_profit ASC;
+ORDER BY total_profit DESC
+LIMIT 10;
